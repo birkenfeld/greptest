@@ -1,0 +1,17 @@
+[package]
+name = "greptest"
+version = "0.1.0"
+authors = ["Georg Brandl <georg@python.org>"]
+
+[features]
+default = []
+pcre = []
+jit = []
+
+[dependencies]
+libc = "*"
+memmap = "*"
+
+[dependencies.regex]
+git = "https://github.com/rust-lang-nursery/regex"
+branch = "raw-bytes"
